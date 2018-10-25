@@ -1,0 +1,31 @@
+{
+  "name": "teamcmp-test",
+  "version": "1.0.0",
+  "description": "A skills test for TeamCMP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadalsol/teamcmp-test.git"
+  },
+  "author": "Nadal Soler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadalsol/teamcmp-test/issues"
+  },
+  "homepage": "https://github.com/nadalsol/teamcmp-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.1"
+  }
+}
