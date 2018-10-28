@@ -1,0 +1,14 @@
+// Text
+// -----------------------------------------------------------------------------
+
+.text {
+  @include text;
+
+  &--small {
+    font-size: $fz-small;
+  }
+
+  &--medium {
+    font-size: $fz-medium;
+  }
+}

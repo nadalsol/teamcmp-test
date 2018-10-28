@@ -1,0 +1,10 @@
+// Font mixins
+// -----------------------------------------------------------------------------
+
+@mixin font($ff, $fz, $fw, $lh, $c) {
+  font-family: $ff;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $c;
+}

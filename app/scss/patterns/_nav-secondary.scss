@@ -1,0 +1,34 @@
+// Secondary navigation
+// -----------------------------------------------------------------------------
+
+.nav-secondary {
+  @include list-reset;
+  margin-bottom: $sp-small;
+  text-align: center;
+  line-height: $lh-large;
+
+  @media ($medium-up) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  &__link {
+    @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
+
+    .nav-secondary--social & {
+      @include link($nav-secondary-social-link-c, $nav-secondary-social-link-c-hover);
+    }
+  }
+
+  &--social {
+    margin-bottom: 0;
+    text-align: left;
+
+    > li {
+      @media ($small-only-min) and ($small-only-max) {
+        @include center-block;
+        width: 110px;
+      }
+    }
+  }
+}

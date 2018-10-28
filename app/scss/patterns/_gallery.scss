@@ -1,0 +1,23 @@
+// Gallery
+// -----------------------------------------------------------------------------
+
+.gallery {
+  @include list-flex;
+
+  &__more {
+    position: relative;
+
+    &::after {
+      @include positioner-center-all;
+      content: '+2 more photos';
+      width: 100%;
+      text-align: center;
+      font-size: $fz-xsmall;
+      color: $c-light;
+
+      @media ($medium-up) {
+        content: none;
+      }
+    }
+  }
+}

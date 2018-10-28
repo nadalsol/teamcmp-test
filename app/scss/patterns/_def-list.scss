@@ -1,0 +1,15 @@
+// Definition list
+// -----------------------------------------------------------------------------
+
+.def-list {
+  @include clearfix;
+
+  &__term {
+    float: left;
+    margin-right: $sp-base;
+  }
+
+  &__desc {
+    margin-left: 0;
+  }
+}

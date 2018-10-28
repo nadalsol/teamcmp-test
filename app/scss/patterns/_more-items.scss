@@ -1,0 +1,36 @@
+// More items
+// -----------------------------------------------------------------------------
+//
+// 1. Hack to fix a problem with truncate text in grid cells:
+// https://dev.to/timhecker/grid-cell-issue-with-white-space-nowrap--text-overflow-ellipsis-52g6
+//
+
+.more-items {
+  @media ($medium-up) {
+    display: grid;
+    grid-column-gap: $sp-large;
+    grid-row-gap: $sp-large;
+    grid-template-columns: auto auto auto;
+  }
+
+  @media ($large-up) {
+    grid-column-gap: $sp-big;
+  }
+
+  &__item {
+    min-width: 0; // 1
+
+    @media ($small-only-min) and ($small-only-max) {
+      margin-bottom: $sp-large;
+    }
+
+    > .heading3 {
+      margin-bottom: $sp-xxsmall;
+    }
+
+    .field {
+      float: right;
+      margin-left: $sp-xxsmall;
+    }
+  }
+}

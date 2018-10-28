@@ -1,0 +1,21 @@
+// Link mixins
+// -----------------------------------------------------------------------------
+
+// Link generation with states
+@mixin link($c, $c-hover, $td: none) {
+  color: $c;
+  transition: $transition-c;
+  text-decoration: $td;
+
+  &:visited {
+    color: $c;
+  }
+
+  &:hover {
+    color: $c-hover;
+  }
+
+  &:active {
+    color: $c;
+  }
+}

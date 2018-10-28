@@ -1,0 +1,68 @@
+// Heading
+// -----------------------------------------------------------------------------
+
+h1,
+.heading1 {
+  @include font(
+    $ff-sans-serif,
+    $fz-huge,
+    $fw-bold,
+    $lh-small,
+    $c-cod
+  );
+}
+
+h2,
+.heading2 {
+  @include font(
+    $ff-sans-serif,
+    $fz-big,
+    $fw-bold,
+    $lh-small,
+    $c-cod
+  );
+}
+
+h3,
+.heading3 {
+  @include font(
+    $ff-sans-serif,
+    $fz-xlarge,
+    $fw-bold,
+    $lh-small,
+    $c-cod
+  );
+}
+
+h4,
+.heading4 {
+  @include font(
+    $ff-sans-serif,
+    $fz-large,
+    $fw-bold,
+    $lh-small,
+    $c-dove
+  );
+}
+
+h5,
+.heading5 {
+  @include font(
+    $ff-sans-serif,
+    $fz-medium,
+    $fw-bold,
+    $lh-small,
+    $c-boulder
+  );
+}
+
+h6,
+.heading6 {
+  @include font(
+    $ff-sans-serif,
+    $fz-base,
+    $fw-bold,
+    $lh-small,
+    $c-dusty
+  );
+}

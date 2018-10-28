@@ -1,0 +1,57 @@
+// List mixins
+// -----------------------------------------------------------------------------
+
+// Reset default list styles
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Turns list items into flex elements
+@mixin list-flex() {
+  @include list-reset;
+  display: flex;
+
+  > li {
+    flex-grow: 1;
+  }
+}
+
+// Turns list items into inline-block
+@mixin list-inline($pdl: $sp-base, $pdr: $sp-base) {
+  @include list-reset;
+
+  > li {
+    display: inline-block;
+    padding-left: $pdl;
+    padding-right: $pdr;
+  }
+}
+
+// Turns list items into inline-block
+// Also adds pipes "|" between list items
+@mixin list-inline-pipped($pdl: $sp-xxsmall, $pdr: $sp-xxsmall, $pipe-top: 2px, $pipe-wd: 1px, $pipe-ht: $sp-xsmall, $pipe-bg: $c-cod) {
+  @include list-reset;
+
+  > li {
+    position: relative;
+    display: inline-block;
+    padding-left: $pdl;
+    padding-right: $pdr;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: $pipe-top;
+      left: 0;
+      width: $pipe-wd;
+      height: $pipe-ht;
+      background-color: $pipe-bg;
+    }
+
+    &:first-child:before {
+      content: none;
+    }
+  }
+}

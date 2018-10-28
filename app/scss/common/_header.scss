@@ -1,0 +1,55 @@
+// Header
+// -----------------------------------------------------------------------------
+
+.header {
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, $zi-500);
+  background-color: $header-bg;
+  box-shadow: 0 $br-small $c-mercury;
+
+  @media ($medium-up) {
+    @include size($header-wd-medium-up, $header-ht-medium-up);
+  }
+
+  > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__brand {
+    @include size($header-brand-wd, $header-brand-ht);
+    margin-left: $sp-small;
+
+    @media ($medium-up) {
+      margin-left: 0;
+    }
+  }
+
+  // &__nav {
+  //   @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, $zi-500);
+  //   overflow-y: auto;
+  //
+  //   @media ($medium-up) {
+  //     @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
+  //     @include clearfix;
+  //     float: right;
+  //     overflow-y: visible;
+  //   }
+  // }
+
+  &__hamburger {
+    // @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, $zi-500);
+    @include size($header-hamburger-wd, $header-hamburger-ht);
+    line-height: $header-hamburger-ht;
+    background-color: $header-hamburger-bg;
+
+    &:focus {
+      @include tab-focus-silent;
+    }
+
+    > .icon {
+      vertical-align: middle;
+    }
+  }
+}

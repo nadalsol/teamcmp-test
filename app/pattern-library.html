@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pattern Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <style>
+      body {
+        margin-top: 0; /* overriding fixed header space */
+      }
+
+      .patlab-section {
+        padding-bottom: 40px;
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 40px;
+      }
+
+      .patlab-heading1 {
+        font-size: 48px;
+        color: #000;
+        border-bottom: 2px solid #2aa3f9;
+        margin-bottom: 40px;
+      }
+
+      .patlab-heading2 {
+        font-size: 40px;
+        color: #000;
+      }
+
+      .patlab-margin-bottom {
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 1440px) {
+        body {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="panel-light">
+        <div class="u-inner-large">
+
+          <h1 class="patlab-heading1">Pattern Library</h1>
+
+          <!-- TOC -->
+          <div class="patlab-section" id="patlab-toc">
+            <nav>
+              <ul>
+                <li>
+                  <a class="link" href="#patlab-button">Button</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-form">Form</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-heading">Heading</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-helpers">Helpers</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-link">Link</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-text">Text</a>
+                </li>
+                <li>
+                  <a class="link" href="#patlab-user-rating">User rating</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Button -->
+          <div class="patlab-section" id="patlab-button">
+            <h2 class="patlab-heading2">Button</h2>
+            <div class="panel-neutral">
+              <div class="u-inner-medium">
+                <div class="patlab-margin-bottom">
+                  <a class="button button--primary" href="#">
+                    Button primary
+                  </a>
+                  <a class="button button--primary is-disabled" href="#">
+                    Button primary disabled
+                  </a>
+                  <br>
+                  <br>
+                  <a class="button button--primary button--large" href="#">
+                    Button primary large
+                  </a>
+                  <a class="button button--primary button--large is-disabled" href="#">
+                    Button primary large disabled
+                  </a>
+                </div>
+                <div class="patlab-margin-bottom">
+                  <a class="button button--secondary" href="#">
+                    Button secondary
+                  </a>
+                  <a class="button button--secondary is-disabled" href="#">
+                    Button secondary disabled
+                  </a>
+                  <br>
+                  <br>
+                  <a class="button button--secondary button--large" href="#">
+                    Button secondary large
+                  </a>
+                  <a class="button button--secondary button--large is-disabled" href="#">
+                    Button secondary large disabled
+                  </a>
+                </div>
+                <div class="patlab-margin-bottom">
+                  <button class="button button--icon button--like">
+                    <img src="./images/icon_like.png" width="16" height="14" alt="Like">
+                  </button>
+                  <button class="button button--icon button--dislike">
+                    <img src="./images/icon_dislike.png" width="16" height="14" alt="Dislike">
+                  </button>
+                </div>
+                <div class="patlab-margin-bottom">
+                  <button class="button button--primary">
+                    <svg class="icon icon--xsmall" width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><title>Download</title><path d="M5.357 0v7.467H3.213L7.5 12.8l4.285-5.334H9.643V0H5.357zm7.5 10.667v3.2H2.141v-3.2H0V16h15v-5.333h-2.144z" fill="#FFF" fill-rule="evenodd"/></svg>
+                    Button with icon
+                  </button>
+                </div>
+                <div>
+                  <button class="button button--primary button--block">
+                    Button block
+                  </button>
+                  <br>
+                  <br>
+                  <button class="button button--primary button--block-sm-only">
+                    Button block (small devices only)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="patlab-section" id="patlab-form">
+            <h2 class="patlab-heading2">Form</h2>
+            <form class="form u-w50" action="#" method="post">
+              <fieldset class="form__fieldset">
+                <div class="form__group">
+                  <label class="form__label" for="name">Name</label>
+                  <input class="field" type="text" id="name" name="name" tabindex="1" placeholder="John Smith" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="phone">Phone</label>
+                  <input class="field" type="tel" id="phone" name="phone" tabindex="2" placeholder="666 333 111" required>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <div class="form__group">
+                  <label class="form__label" for="email">E-mail</label>
+                  <input class="field" type="email" id="email" name="email" tabindex="3" placeholder="johnsmith@gmail.com" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="message">Message</label>
+                  <textarea class="form__textarea" id="message" name="message" rows="5" cols="80" tabindex="4" placeholder="Hello world!" required></textarea>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <div class="form__group">
+                  <label class="form__label" for="user-rating-small">User rating small</label>
+                  <input class="field field--rating-small" type="text" id="user-rating-small" name="user-rating-small" value="8.5" readonly>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="user-rating-large">User rating large</label>
+                  <input class="field field--rating-large" type="text" id="user-rating-large" name="user-rating-large" value="8.5" readonly>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <div class="form__group">
+                  <button type="submit" class="button button--primary">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <!-- Heading -->
+          <div class="patlab-section" id="patlab-heading">
+            <h2 class="patlab-heading2">Heading</h2>
+            <h1 class="heading1">h1. This is a heading</h1>
+            <h2 class="heading2">h2. This is a heading</h2>
+            <h3 class="heading3">h3. This is a heading</h3>
+            <h4 class="heading4">h4. This is a heading</h4>
+            <h5 class="heading5">h5. This is a heading</h5>
+            <h6 class="heading6">h6. This is a heading</h6>
+          </div>
+
+          <!-- Helpers -->
+          <div class="patlab-section" id="patlab-helpers">
+            <h2 class="patlab-heading2">Helpers</h2>
+            <div class="patlab-margin-bottom">
+              <span>u-img-responsive:</span>
+              <img class="u-img-responsive" src="./images/video_cover.jpg" alt="Shark">
+            </div>
+          </div>
+
+          <!-- Link -->
+          <div class="patlab-section" id="patlab-link">
+            <h2 class="patlab-heading2">Link</h2>
+            <div class="patlab-margin-bottom panel-light">
+              <p class="text">This is <a class="link" href="#">link</a> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="patlab-section" id="patlab-text">
+            <h2 class="patlab-heading2">Text</h2>
+            <div class="patlab-margin-bottom">
+              <p class="text text--small">This is <strong>text small</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+            </div>
+            <div class="patlab-margin-bottom">
+              <p class="text">This is <strong>text</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+            </div>
+            <div class="patlab-margin-bottom">
+              <p class="text text--medium">This is <strong>text medium</strong> dolor ipsum, pharetra non nunc a lorem adescipli. Ut quis arcu et leo tempor lacinia. Etiam sagittis orci tempus, accumsan neque ut, laoreet tellus. In finibus tortor lacinia elit lobortis feugiat.</p>
+            </div>
+          </div>
+
+          <!-- User rating -->
+          <div class="patlab-section" id="patlab-user-rating">
+            <h2 class="patlab-heading2">User rating</h2>
+            <div class="user-rating">
+              <div class="user-rating__action">
+                <input class="field field--rating-large" type="text" name="user-rating-deep-ocean" value="8.5" readonly>
+                <div class="user-rating__buttonset">
+                  <button class="button button--icon button--like">
+                    <img src="./images/icon_like.png" width="16" height="14" alt="Like">
+                  </button>
+                  <button class="button button--icon button--dislike">
+                    <img src="./images/icon_dislike.png" width="16" height="14" alt="Dislike">
+                  </button>
+                </div>
+              </div>
+              <div class="user-rating__content">
+                <dl class="def-list">
+                  <dt class="def-list__term">Uploaded:</dt>
+                  <dd class="def-list__desc">October 12, 2017</dd>
+                  <dt class="def-list__term">Duration:</dt>
+                  <dd class="def-list__desc">35 <abbr title="Minutes">min</abbr></dd>
+                  <dt class="def-list__term">Tags:</dt>
+                  <dd class="def-list__desc">
+                    <a class="link" href="#">Animals</a>,
+                    <a class="link" href="#">Sea</a>,
+                    <a class="link" href="#">Documentary</a>,
+                    <a class="link" href="#">Nature</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

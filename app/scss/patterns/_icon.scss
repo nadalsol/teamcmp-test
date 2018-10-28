@@ -1,0 +1,30 @@
+// Icon
+// -----------------------------------------------------------------------------
+// Use: Required.
+// Purpose: Base class, to specify the icon basic properties.
+//
+// 1. This allows inheritance from parent elements (i.e. an Icon placed within
+// a Button would inherit the color defined in the Button, for each state).
+//
+
+.icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+  fill: currentColor; // 1
+}
+
+
+// Icon sizes
+// -----------------------------------------------------------------------------
+// Use: Optional.
+// Purpose: Size class, to specify different icon sizes.
+// Possible values: `icon--xsmall`, `icon--small`...
+//
+
+.icon--xsmall {
+  @include size(15px, 16px);
+}
+
+.icon--small {
+  @include size(24px, 24px);
+}

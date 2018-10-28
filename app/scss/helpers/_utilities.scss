@@ -1,0 +1,88 @@
+// Utility classes
+// -----------------------------------------------------------------------------
+
+// Center-align a block level element
+.u-center-block {
+  @include center-block;
+}
+
+// Clear of floats
+.u-clearfix {
+  @include clearfix;
+}
+
+// Floats
+.u-float-l {
+  float: left;
+}
+
+.u-float-r {
+  float: right;
+}
+
+// Margin
+.u-margin-bottom-xxs {
+  margin-bottom: $sp-xxsmall;
+}
+
+.u-margin-bottom-xs {
+  margin-bottom: $sp-xsmall;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: $sp-small;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: $sp-large;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: $sp-big;
+}
+
+// Responsive images
+.u-img-responsive {
+  @include img-responsive;
+}
+
+// Text alignment
+.u-text-center {
+  text-align: center;
+}
+
+// Text transform
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+// Text wrapping
+.u-text-truncate {
+  @include text-truncate;
+}
+
+// Visibility
+.is-hidden {
+  display: none !important;
+}
+
+.is-small-hidden {
+  display: none;
+
+  @media ($medium-up) {
+    display: block !important;
+  }
+}
+
+.is-medium-hidden {
+  display: block;
+
+  @media ($medium-up) {
+    display: none !important;
+  }
+}
+
+// Width
+.u-w50 {
+  width: 50% !important;
+}

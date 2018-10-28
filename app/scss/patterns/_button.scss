@@ -1,0 +1,106 @@
+// Button
+// -----------------------------------------------------------------------------
+
+//
+// Reset `button` and button-style `input` default styles
+//
+// 1. for input
+// 2. for button
+//
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  appearance: button; // 1
+  user-select: none; // 2
+}
+
+[role="button"] {
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  user-select: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+[role="button"] {
+  line-height: $lh-base;
+  cursor: pointer;
+}
+
+
+//
+// Button base
+//
+.button {
+  @include button-base;
+}
+
+
+//
+// Button type
+//
+.button--primary {
+  @include button-primary;
+}
+
+.button--secondary {
+  @include button-secondary;
+}
+
+
+//
+// Button size
+//
+.button--large {
+  @include button-large;
+}
+
+
+//
+// Button icon
+//
+.button--icon {
+  @include button-icon;
+}
+
+
+//
+// Button like and dislike
+//
+.button--like {
+  background-color: $c-algae;
+}
+
+.button--dislike {
+  background-color: $c-mercury;
+}
+
+
+//
+// Button full width
+//
+// 1. for all devices
+// 2. for small devices only
+//
+.button--block { // 1
+  width: 100%;
+}
+
+.button--block-sm-only { // 2
+  @media ($small-only-min) and ($small-only-max) {
+    width: 100%;
+  }
+}

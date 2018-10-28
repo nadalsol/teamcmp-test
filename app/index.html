@@ -5,29 +5,336 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VR Frontend Test</title>
-    <meta name="description" content="A virtual reality frontend test for TeamCMP">
+    <meta name="description" content="A virtual reality frontend test for SomeSite">
     <meta name="author" content="Nadal Soler">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   </head>
   <body>
-
-    <header>
-      header
+    <!-- header -->
+    <header id="header" class="header" role="banner">
+      <div class="wrapper">
+        <div class="header__brand">
+          <a rel="author" href="#">
+            <img src="./images/logo.png" width="99" height="35" alt="SomeSite logo">
+          </a>
+        </div>
+        <nav id="header-nav" class="header__nav is-small-hidden">
+          <ul class="nav-main u-text-uppercase">
+            <li>
+              <a class="nav-main__link is-active" href="#">Videos</a>
+            </li>
+            <li>
+              <a class="nav-main__link" href="#">Channels</a>
+            </li>
+            <li>
+              <a class="nav-main__link" href="#">Help</a>
+            </li>
+            <li>
+              <a class="nav-main__link" href="#">Join</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="header-hamburger" class="header__hamburger is-medium-hidden">
+          <svg id="header-hamburger-open" class="icon icon--small" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Open menu</title><g stroke="#333" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M2.5 19.5H22M2.5 11.5H22M2.5 3.5H22"/></g></svg>
+          <svg id="header-hamburger-close" class="icon icon--small is-hidden" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Close menu</title><g stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M3 21L21 3M3 3l18 18L3 3z"/></g></svg>
+        </button>
+      </div>
     </header>
 
-    <div class="">
-      hei
-    </div>
+    <!-- main content -->
+    <main class="main-content" aria-label="Content">
+      <div class="wrapper">
 
-    <footer>
-      footer
+        <!-- video-object -->
+        <div class="u-margin-bottom-sm">
+          <div class="video-object">
+            <div class="video-object__cover u-margin-bottom-sm">
+              <img class="u-img-responsive" src="./images/video_cover.jpg" alt="Shark">
+            </div>
+            <div class="u-margin-bottom-sm">
+              <ul class="gallery">
+                <li>
+                  <a class="gallery__link" href="#">
+                    <img class="u-img-responsive" src="./images/video_thumb_01.jpg" alt="Ameba">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery__link" href="#">
+                    <img class="u-img-responsive" src="./images/video_thumb_02.jpg" alt="Reef">
+                  </a>
+                </li>
+                <li class="gallery__more">
+                  <a class="gallery__link" href="#">
+                    <img class="u-img-responsive" src="./images/video_thumb_03.jpg" alt="Black smoke">
+                  </a>
+                </li>
+                <li class="is-small-hidden">
+                  <a class="gallery__link" href="#">
+                    <img class="u-img-responsive" src="./images/video_thumb_04.jpg" alt="Manta ray">
+                  </a>
+                </li>
+                <li class="is-small-hidden">
+                  <a class="gallery__link" href="#">
+                    <img class="u-img-responsive" src="./images/video_thumb_05.jpg" alt="Octopus">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="video-object__options u-margin-bottom-sm">
+              <button id="button-download" class="button button--primary button--block-sm-only is-medium-hidden">
+                <svg class="icon icon--xsmall" width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><title>Download</title><path d="M5.357 0v7.467H3.213L7.5 12.8l4.285-5.334H9.643V0H5.357zm7.5 10.667v3.2H2.141v-3.2H0V16h15v-5.333h-2.144z" fill="#FFF" fill-rule="evenodd"/></svg>
+                Download
+              </button>
+              <ul class="download is-small-hidden">
+                <li class="download__caption is-small-hidden">
+                  <span>Download Options</span>
+                </li>
+                <li>
+                  <a class="link" href="#">MobileLQ - 30<abbr title="Frames per second">fps</abbr> (1.8<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+                <li>
+                  <a class="link" href="#">MobileHQ - 60<abbr title="Frames per second">fps</abbr> (2.6<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Vive / Oculus - 60<abbr title="Frames per second">fps</abbr> (7<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Gear VR - 60<abbr title="Frames per second">fps</abbr> (3.6<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Playstation VR - 60<abbr title="Frames per second">fps</abbr> (2.6<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Daydream View - 60<abbr title="Frames per second">fps</abbr> (3.6<abbr title="Giga bytes">GB</abbr>)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="user-rating u-margin-bottom-sm">
+              <div class="user-rating__action">
+                <input class="field field--rating-large" type="text" name="user-rating-deep-ocean" value="8.5" readonly>
+                <div class="user-rating__buttonset">
+                  <button class="button button--icon button--like">
+                    <img src="./images/icon_like.png" width="16" height="14" alt="Like">
+                  </button>
+                  <button class="button button--icon button--dislike">
+                    <img src="./images/icon_dislike.png" width="16" height="14" alt="Dislike">
+                  </button>
+                </div>
+              </div>
+              <div class="user-rating__content">
+                <dl class="def-list">
+                  <dt class="def-list__term">Uploaded:</dt>
+                  <dd class="def-list__desc">October 12, 2017</dd>
+                  <dt class="def-list__term">Duration:</dt>
+                  <dd class="def-list__desc">35 <abbr title="Minutes">min</abbr></dd>
+                  <dt class="def-list__term">Tags:</dt>
+                  <dd class="def-list__desc">
+                    <a class="link" href="#">Animals</a>,
+                    <a class="link" href="#">Sea</a>,
+                    <a class="link" href="#">Documentary</a>,
+                    <a class="link" href="#">Nature</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- excerpt -->
+        <div class="u-margin-bottom-lg">
+          <h2 class="heading2">Deep ocean is the final frontier</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <!-- discussion -->
+        <div class="u-margin-bottom-big">
+          <h2 class="heading2">Discussion</h2>
+          <div class="u-margin-bottom-xxs">
+            <p class="text">Don't be shy! Share your thoughts and feedback in the <a class="link" href="#">comments section</a>.</p>
+          </div>
+          <a class="button button--primary" href="#">
+            Video feedback
+          </a>
+        </div>
+
+        <!-- more from this user -->
+        <div class="u-margin-bottom-big">
+          <h2 class="heading2">More from this user</h2>
+          <div class="more-items u-margin-bottom-lg">
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_01.jpg" alt="Cargo ship sailing in a rough sea">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="7.4" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_02.jpg" alt="Deer surrounded by nature">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="8.3" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_03.jpg" alt="Dusty road">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="9.1" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_04.jpg" alt="Athen's pantheon">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="5.2" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_05.jpg" alt="Volcano surrounded by the jungle">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="7.8" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="more-items__item">
+              <img class="u-img-responsive u-margin-bottom-xxs" src="./images/other_thumb_06.jpg" alt="Inuit man with deers in a snowy landscape">
+              <h3 class="heading3 u-text-truncate">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</h3>
+              <p class="text u-clearix">
+                <input class="field field--rating-small" type="text" value="9.3" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <button class="button button--primary">
+            More videos
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="wrapper">
+        <nav class="footer__nav">
+          <ul class="nav-secondary">
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Videos
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Channels
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Help
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                News
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-secondary">
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Terms and conditions
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Privacy policy
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link u-text-uppercase" href="#">
+                Usc 2257
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link u-text-uppercase" href="#">
+                Dmca
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-secondary">
+            <li>
+              <a class="nav-secondary__link u-text-uppercase" href="#">
+                Webmasters
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Press inquiries
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                Support
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-secondary nav-secondary--social">
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Twitter
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-secondary nav-secondary--social">
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Youtube
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Tumblr
+              </a>
+            </li>
+            <li>
+              <a class="nav-secondary__link" href="#">
+                <svg class="icon icon--small" width="85" height="85" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><g fill="none" fill-rule="evenodd"><path fill="#9CE8DA" d="M0 0h85v85H0z"/><path d="M34.977 37.236h3.224V34.11c0-1.377.034-3.502 1.038-4.818 1.057-1.392 2.508-2.34 5.005-2.34 4.066 0 5.779.579 5.779.579l-.807 4.762s-1.343-.388-2.596-.388c-1.254 0-2.376.448-2.376 1.698v3.632h5.14l-.359 4.651h-4.781v16.16H38.2v-16.16h-3.224v-4.651z" stroke="#9CE8DA" fill="#000"/></g></svg>
+                Snapchat
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__legal u-text-center">
+        Copyright © SomeSite 2018
+      </div>
     </footer>
 
     <!-- scripts -->
-    <script src="js/main.js"></script>
-
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

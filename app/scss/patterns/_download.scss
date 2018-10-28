@@ -1,0 +1,18 @@
+// Download
+// -----------------------------------------------------------------------------
+
+.download {
+  @include list-reset;
+  color: $c-mine;
+  line-height: $lh-medium;
+
+  &__caption {
+    margin-bottom: $sp-small;
+
+    > span {
+      padding-bottom: $sp-xxsmall;
+      border-bottom: $br-base solid $c-mine;
+      font-weight: $fw-bold;
+    }
+  }
+}

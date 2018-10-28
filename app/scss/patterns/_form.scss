@@ -1,0 +1,48 @@
+// Form
+// -----------------------------------------------------------------------------
+//
+// 1. An input field can eventually be placed outside a `<form>`, that's why
+// it's considered an atom.
+//
+
+.form {
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__group {
+    margin-bottom: $form-group-mb;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: $form-label-mb;
+    font-family: $form-label-ff;
+    font-size: $form-label-fz;
+    font-weight: $form-label-fw;
+    color: $form-label-c;
+    text-align: left;
+  }
+
+  &__textarea {
+    @include field-and-textarea($form-textarea-ht, $form-textarea-lh);
+    resize: none;
+  }
+}
+
+.field { // 1
+  @include field-and-textarea($form-field-ht, $form-field-lh);
+
+  &--rating-small {
+    @include field-rating($sp-xxlarge);
+  }
+
+  &--rating-large {
+    @include field-rating($sp-huge);
+    height: $sp-xxxlarge;
+    padding: $sp-xxsmall $sp-xsmall;
+    font-size: $fz-xlarge;
+  }
+}

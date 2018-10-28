@@ -1,0 +1,30 @@
+// Footer
+// -----------------------------------------------------------------------------
+
+.footer {
+  color: $c-light;
+  background-color: $c-cod;
+
+  &__nav {
+    padding: $sp-small;
+
+    @media ($medium-up) {
+      display: grid;
+      grid-column-gap: $sp-large;
+      grid-row-gap: $sp-large;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      padding: $sp-large;
+    }
+
+    @media ($large-up) {
+      grid-column-gap: $sp-big;
+      padding: $sp-small $sp-xxsmall;
+    }
+  }
+
+  &__legal {
+    padding: $sp-xxsmall;
+    color: $c-boulder;
+    background-color: $c-dark;
+  }
+}

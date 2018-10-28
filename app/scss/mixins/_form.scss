@@ -1,0 +1,63 @@
+// Form mixins
+// -----------------------------------------------------------------------------
+//
+// 1. Chrome/Opera/Safari
+// 2. Firefox 19+
+// 3. IE 10+
+// 4. Firefox 18-
+// 5. Set to `0` to remove ugly rounding for Safari in iOS.
+//
+
+@mixin placeholder($c: inherit, $fs: normal) {
+  &::-webkit-input-placeholder { // 1
+    color: $c;
+    font-style: $fs;
+  }
+
+  &::-moz-placeholder { // 2
+    color: $c;
+    font-style: $fs;
+  }
+
+  &:-ms-input-placeholder { // 3
+    color: $c;
+    font-style: $fs;
+  }
+
+  &:-moz-placeholder { // 4
+    color: $c;
+    font-style: $fs;
+  }
+}
+
+@mixin field-and-textarea($ht, $lh) {
+  width: 100%;
+  height: $ht;
+  padding: $form-field-pd;
+  font-family: $form-field-ff;
+  font-size: $form-field-fz;
+  font-weight: $form-field-fw;
+  line-height: $lh;
+  color: $form-field-c;
+  transition: $form-field-trn;
+  background-color: $form-field-bg;
+  border: $form-field-br;
+  border-radius: $form-field-brr; // 5
+
+  &:focus {
+    outline: none;
+    border-color: $form-field-brc-focus;
+
+    &[readonly] {
+      border-color: $form-field-brc-readonly;
+    }
+  }
+
+  @include placeholder($form-field-phr-c, $form-field-phr-fs);
+}
+
+@mixin field-rating($wd) {
+  width: $wd;
+  font-weight: $fw-bold;
+  text-align: center;
+}

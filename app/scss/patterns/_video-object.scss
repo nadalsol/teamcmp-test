@@ -1,0 +1,30 @@
+// Video object
+// -----------------------------------------------------------------------------
+
+.video-object {
+  @media ($large-up) {
+    position: relative;
+  }
+
+  &__cover {
+    position: relative;
+
+    @media ($large-up) {
+      width: 70%;
+    }
+
+    &::after {
+      @include positioner-center-all;
+      @include size(80px, 80px);
+      content: '';
+      background-image: url($img-path + "icon_play.png");
+      background-size: 100%;
+    }
+  }
+
+  &__options {
+    @media ($large-up) {
+      @include positioner(absolute, auto, auto, top, 0, left, 73%);
+    }
+  }
+}
