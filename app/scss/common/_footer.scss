@@ -6,19 +6,19 @@
   background-color: $c-cod;
 
   &__nav {
-    padding: $sp-small;
+    padding: $sp-small 0;
 
     @media ($medium-up) {
       display: grid;
       grid-column-gap: $sp-large;
       grid-row-gap: $sp-large;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      padding: $sp-large;
+      padding: $sp-large 0;
     }
 
     @media ($large-up) {
       grid-column-gap: $sp-big;
-      padding: $sp-small $sp-xxsmall;
+      padding: $sp-small 0;
     }
   }
 

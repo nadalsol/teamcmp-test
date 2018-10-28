@@ -68,4 +68,11 @@ ul, ol, dl, figure {
 .wrapper {
   @include center-block;
   max-width: $wrapper-max-wd;
+  padding-left: $sp-small;
+  padding-right: $sp-small;
+
+  @media ($large-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

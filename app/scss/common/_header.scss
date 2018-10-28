@@ -19,11 +19,6 @@
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
-    margin-left: $sp-small;
-
-    @media ($medium-up) {
-      margin-left: 0;
-    }
   }
 
   // &__nav {
@@ -41,6 +36,7 @@
   &__hamburger {
     // @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, $zi-500);
     @include size($header-hamburger-wd, $header-hamburger-ht);
+    margin-right: -$sp-small;
     line-height: $header-hamburger-ht;
     background-color: $header-hamburger-bg;
 
