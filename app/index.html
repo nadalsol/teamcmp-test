@@ -9,7 +9,7 @@
     <meta name="author" content="Nadal Soler">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   </head>
   <body>
@@ -335,6 +335,14 @@
     </footer>
 
     <!-- scripts -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // If jQuery is not initialized (CDN is down), load from local source
+      if (typeof jQuery === 'undefined') {
+        document.write(unescape('%3Cscript src="{{ site.baseurl }}/assets/scripts/jquery-3.3.1.min.js"%3E%3C/script%3E'));
+      }
+    </script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

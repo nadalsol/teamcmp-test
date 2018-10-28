@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, $zi-500);
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, $zi-50);
   background-color: $header-bg;
   box-shadow: 0 $br-small $c-mercury;
 
@@ -21,24 +21,20 @@
     @include size($header-brand-wd, $header-brand-ht);
   }
 
-  // &__nav {
-  //   @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, $zi-500);
-  //   overflow-y: auto;
-  //
-  //   @media ($medium-up) {
-  //     @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
-  //     @include clearfix;
-  //     float: right;
-  //     overflow-y: visible;
-  //   }
-  // }
+  &__nav {
+    @media ($small-only-min) and ($small-only-max) {
+      @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, 0, left, 0, $zi-50);
+      @include linear-gradient($c-deyork, $c-curious);
+      text-align: center;
+    }
+  }
 
   &__hamburger {
-    // @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, $zi-500);
     @include size($header-hamburger-wd, $header-hamburger-ht);
     margin-right: -$sp-small;
     line-height: $header-hamburger-ht;
     background-color: $header-hamburger-bg;
+    z-index: $zi-100;
 
     &:focus {
       @include tab-focus-silent;

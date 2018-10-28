@@ -34,6 +34,8 @@ $c-mercury:              #e5e5e5 !default;
 $c-light:                #fff !default;
 
 $c-algae:                #79d492 !default;
+$c-curious:              #2991d8 !default;
+$c-deyork:               #7cc59c !default;
 $c-dodger:               #2aa3f9 !default;
 $c-indigo:               #4766c0 !default;
 $c-red:                  #ff0000 !default;
@@ -89,6 +91,10 @@ $screen-sm-min:          320px !default;
 $screen-md-min:          640px !default;
 $screen-lg-min:          1024px !default;
 
+$screen-md-min-1:        $screen-md-min - 1 !default;
+$small-only-min:         "min-width:0" !default;
+$small-only-max:         "max-width:#{$screen-md-min-1}" !default;
+
 $small-up:               "min-width:#{$screen-sm-min}" !default;
 $medium-up:              "min-width:#{$screen-md-min}" !default;
 $large-up:               "min-width:#{$screen-lg-min}" !default;
@@ -99,10 +105,8 @@ $transition-bc:          border-color 250ms !default;
 $transition-c:           color 250ms !default;
 
 // Z-index table
-$zi-50:                  50 !default;  // TODO : check if still in use
-$zi-100:                 100 !default; // TODO : check if still in use
-$zi-500:                 500 !default; // TODO : check if still in use
-$zi-900:                 900 !default; // TODO : check if still in use
+$zi-50:                  50 !default;
+$zi-100:                 100 !default;
 
 
 // Common
@@ -112,12 +116,9 @@ $zi-900:                 900 !default; // TODO : check if still in use
 $header-brand-wd:                 100px !default;
 $header-brand-ht:                 $sp-xlarge !default;
 
-$header-nav-po:                   absolute !default;
+$header-nav-po:                   fixed !default;
 $header-nav-wd:                   100% !default;
-$header-nav-ht:                   100vh !default;
-$header-nav-po-medium-up:         static !default;
-$header-nav-wd-medium-up:         auto !default;
-$header-nav-ht-medium-up:         auto !default;
+$header-nav-ht:                   100% !default;
 
 $header-wd:                       100% !default;
 $header-ht:                       60px !default;
@@ -127,40 +128,14 @@ $header-bg:                       $c-light !default;
 
 $header-hamburger-wd:             $header-ht !default;
 $header-hamburger-ht:             $header-ht !default;
-$header-hamburger-bg:             $header-bg !default;
+$header-hamburger-bg:             transparent !default;
 
 // Body (should go after Header)
 $body-mt:                         floor($header-ht + $sp-small) !default;
 $body-mt-medium-up:               floor($header-ht-medium-up + $sp-small) !default;
 
-// TODO : remove these comments below
-// Modal
-// $modal-bg:                        rgba(0, 0, 0, .5) !default;
-// $modal-zi:                        $zi-900 !default;
-//
-// $modal-content-bg:                $c-cod !default;
-//
-// $modal-pdv:                       $sp-small !default;
-// $modal-pdh:                       $sp-small !default;
-// $modal-pdv-medium-up:             $sp-xxlarge !default;
-// $modal-pdh-medium-up:             $sp-big !default;
-//
-// $modal-dialog-m:                  $sp-xxsmall !default;
-// $modal-dialog-maxw-medium-up:     $screen-md-min !default;
-
-// Modal contact
-// $modal-contact-bg:                $modal-bg !default;
-// $modal-contact-zi:                $modal-zi !default;
-//
-// $modal-contact-content-bg:        $c-tradewind !default;
-//
-// $modal-contact-pdv:               $modal-pdv !default;
-// $modal-contact-pdh:               $modal-pdh !default;
-// $modal-contact-pdv-medium-up:     $modal-pdv-medium-up !default;
-// $modal-contact-pdh-medium-up:     $modal-pdh-medium-up !default;
-
 // Wrapper
-$wrapper-max-wd:                     1440px !default;
+$wrapper-max-wd:                  1440px !default;
 
 
 // Patterns

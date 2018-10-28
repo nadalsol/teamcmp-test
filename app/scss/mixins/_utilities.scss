@@ -39,3 +39,17 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+// Linear gradient
+//
+// 1. Fallback for old browsers
+// 2. FF3.6-15
+// 3. Chrome10-25, Safari5.1-6
+// 4. W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+//
+@mixin linear-gradient($c-start, $c-end) {
+  background: $c-start; // 1
+  background: -moz-linear-gradient(-45deg, $c-start 0%, $c-start 30%, $c-end 100%); // 2
+  background: -webkit-linear-gradient(-45deg, $c-start 0%, $c-start 30%, $c-end 100%); // 3
+  background: linear-gradient(135deg, $c-start 0%, $c-start 30%, $c-end 100%); // 4
+}

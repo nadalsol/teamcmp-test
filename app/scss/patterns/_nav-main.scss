@@ -6,49 +6,31 @@
 
 .nav-main {
   @include list-reset;
-  // font-family: $ff-sans-serif;
-  font-size: $fz-huge;
-  color: $nav-main-link-c;
-  // font-weight: $fw-base;
+  font-size: $fz-large;
+
+  @media ($small-only-min) and ($small-only-max) {
+    @include positioner-center-all;
+  }
 
   @media ($medium-up) {
     @include list-inline-pipped;
-    // float: left;
     font-size: $fz-small;
-    // line-height: $header-ht-medium-up;
   }
 
   &__link {
-    @include link($nav-main-link-c, $nav-main-link-c-hover);
-    // position: relative;
-    // display: block; // 1
-    // padding: $sp-small $sp-xxlarge;
-    // background-color: $nav-main-link-bgc;
-    // transition: $transition-bg;
-    //
-    // @media ($medium-up) {
-    //   @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
-    //   padding: 0 $sp-xsmall;
-    //   background-color: $nav-main-link-bgc-medium-up;
-    // }
-    //
-    // &:hover {
-    //   background-color: $nav-main-link-bgc-hover;
-    //
-    //   @media ($medium-up) {
-    //     background-color: $nav-main-link-bgc-hover-medium-up;
-    //   }
-    // }
+    @include link($c-light, $nav-main-link-c-hover);
+
+    @media ($small-only-min) and ($small-only-max) {
+      display: block; // 1
+      padding: $sp-xxsmall;
+    }
+
+    @media ($medium-up) {
+      @include link($nav-main-link-c, $nav-main-link-c-hover);
+    }
 
     &.is-active {
       font-weight: $fw-bold;
-      // color: $nav-main-link-c-active;
-      // background-color: $nav-main-link-bgc-active;
-      //
-      // @media ($medium-up) {
-      //   color: $nav-main-link-c-active-medium-up;
-      //   background-color: $nav-main-link-bgc-active-medium-up;
-      // }
     }
   }
 }
