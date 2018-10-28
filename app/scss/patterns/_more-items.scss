@@ -19,9 +19,10 @@
 
   &__item {
     min-width: 0; // 1
+    margin-bottom: $sp-large;
 
-    @media ($small-only-min) and ($small-only-max) {
-      margin-bottom: $sp-large;
+    @media ($medium-up) {
+      margin-bottom: 0;
     }
 
     > .heading3 {

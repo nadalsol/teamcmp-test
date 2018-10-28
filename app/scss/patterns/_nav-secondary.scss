@@ -25,9 +25,11 @@
     text-align: left;
 
     > li {
-      @media ($small-only-min) and ($small-only-max) {
-        @include center-block;
-        width: 110px;
+      @include center-block;
+      width: 110px;
+
+      @media ($medium-up) {
+        width: auto;
       }
     }
   }

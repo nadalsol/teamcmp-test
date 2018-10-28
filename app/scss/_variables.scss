@@ -85,23 +85,15 @@ $lh-medium:              1.75 !default;
 $lh-large:               2 !default;
 
 // Media queries
-$screen-xs-min:          375px !default;
-$screen-sm-min:          480px !default;
-$screen-md-min:          768px !default;
-$screen-lg-min:          992px !default;
-$screen-xl-min:          1200px !default;
-$screen-xxl-min:         1440px !default;
+$screen-sm-min:          320px !default;
+$screen-md-min:          640px !default;
+$screen-lg-min:          1024px !default;
 
-$screen-sm-min-1:        $screen-sm-min - 1 !default;
-$small-only-min:         "min-width:0" !default;
-$small-only-max:         "max-width:#{$screen-sm-min-1}" !default;
+$scree
 
-$xsmall-up:              "min-width:#{$screen-xs-min}" !default;
 $small-up:               "min-width:#{$screen-sm-min}" !default;
 $medium-up:              "min-width:#{$screen-md-min}" !default;
 $large-up:               "min-width:#{$screen-lg-min}" !default;
-$xlarge-up:              "min-width:#{$screen-xl-min}" !default;
-$xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
 $transition-all:         all 250ms !default;
@@ -143,6 +135,7 @@ $header-hamburger-bg:             $header-bg !default;
 $body-mt:                         floor($header-ht + $sp-small) !default;
 $body-mt-medium-up:               floor($header-ht-medium-up + $sp-small) !default;
 
+// TODO : remove these comments below
 // Modal
 // $modal-bg:                        rgba(0, 0, 0, .5) !default;
 // $modal-zi:                        $zi-900 !default;
@@ -167,6 +160,9 @@ $body-mt-medium-up:               floor($header-ht-medium-up + $sp-small) !defau
 // $modal-contact-pdh:               $modal-pdh !default;
 // $modal-contact-pdv-medium-up:     $modal-pdv-medium-up !default;
 // $modal-contact-pdh-medium-up:     $modal-pdh-medium-up !default;
+
+// Wrapper
+$wrapper-max-wd:                     1440px !default;
 
 
 // Patterns

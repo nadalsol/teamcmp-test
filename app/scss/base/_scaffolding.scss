@@ -67,12 +67,5 @@ ul, ol, dl, figure {
 // Wrapper
 .wrapper {
   @include center-block;
-
-  @media ($large-up) {
-    max-width: $screen-xl-min;
-  }
-
-  @media ($xlarge-up) {
-    max-width: $screen-xxl-min;
-  }
+  max-width: $wrapper-max-wd;
 }

@@ -100,7 +100,9 @@ input[type="submit"],
 }
 
 .button--block-sm-only { // 2
-  @media ($small-only-min) and ($small-only-max) {
-    width: 100%;
+  width: 100%;
+
+  @media ($medium-up) {
+    width: auto;
   }
 }

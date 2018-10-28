@@ -25,11 +25,10 @@
   }
 
   &__buttonset {
-    @media ($small-only-min) and ($small-only-max) {
-      float: right;
-    }
+    float: right;
 
     @media ($medium-up) {
+      float: none;
       display: flex;
       margin-top: $sp-base;
     }
@@ -41,8 +40,10 @@
     }
 
     > .button--icon {
-      @media ($small-only-min) and ($small-only-max) {
-        padding: $sp-xsmall;
+      padding: $sp-xsmall;
+
+      @media ($medium-up) {
+        padding: $sp-base;
       }
     }
   }
