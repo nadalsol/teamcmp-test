@@ -26,6 +26,21 @@ const _onLoadListener = function () {
       headerHamburgerClose.forEach(_element4 => _element4.classList.toggle('is-hidden')); // 2
     }));
   })();
+
+  /**
+   * Download layer
+   *
+   * 1. Toggle `download` element visibility, for small devices.
+   */
+  (function () {
+    var buttonDownload = document.querySelectorAll('#button-download'),
+        download = document.querySelectorAll('#download');
+
+    buttonDownload.forEach(_element5 => _element5.addEventListener('click', function (event) {
+      event.preventDefault();
+      download.forEach(_element6 => _element6.classList.toggle('is-small-hidden')); // 1
+    }));
+  })();
 };
 
 if (document.readyState !== 'loading') {

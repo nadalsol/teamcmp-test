@@ -4,15 +4,38 @@
 .download {
   @include list-reset;
   color: $c-mine;
-  line-height: $lh-medium;
+  line-height: $lh-large;
 
-  &__caption {
-    margin-bottom: $sp-small;
+  @media ($small-only-min) and ($small-only-max) {
+    @include positioner(absolute, 100%, auto, top, $sp-big, left, 0);
+    background-color: $c-light;
+    border: $br-small solid $c-silver;
+    text-align: center;
+  }
 
-    > span {
-      padding-bottom: $sp-xxsmall;
-      border-bottom: $br-base solid $c-mine;
-      font-weight: $fw-bold;
+  @media ($medium-up) {
+    line-height: $lh-medium;
+  }
+
+  &__item {
+    border-bottom: $br-small solid $c-silver;
+
+    @media ($medium-up) {
+      border-bottom: none;
+    }
+
+    &:first-child {
+      margin-bottom: $sp-small;
+
+      > span {
+        padding-bottom: $sp-xxsmall;
+        border-bottom: $br-base solid $c-mine;
+        font-weight: $fw-bold;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }

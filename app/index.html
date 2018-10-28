@@ -88,26 +88,26 @@
                 <svg class="icon icon--xsmall" width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><title>Download</title><path d="M5.357 0v7.467H3.213L7.5 12.8l4.285-5.334H9.643V0H5.357zm7.5 10.667v3.2H2.141v-3.2H0V16h15v-5.333h-2.144z" fill="#FFF" fill-rule="evenodd"/></svg>
                 Download
               </button>
-              <ul class="download is-small-hidden">
-                <li class="download__caption is-small-hidden">
+              <ul id="download" class="download is-small-hidden">
+                <li class="download__item is-small-hidden">
                   <span>Download Options</span>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">MobileLQ - 30<abbr title="Frames per second">fps</abbr> (1.8<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">MobileHQ - 60<abbr title="Frames per second">fps</abbr> (2.6<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">Vive / Oculus - 60<abbr title="Frames per second">fps</abbr> (7<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">Gear VR - 60<abbr title="Frames per second">fps</abbr> (3.6<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">Playstation VR - 60<abbr title="Frames per second">fps</abbr> (2.6<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
-                <li>
+                <li class="download__item">
                   <a class="link" href="#">Daydream View - 60<abbr title="Frames per second">fps</abbr> (3.6<abbr title="Giga bytes">GB</abbr>)</a>
                 </li>
               </ul>
@@ -335,14 +335,6 @@
     </footer>
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      // If jQuery is not initialized (CDN is down), load from local source
-      if (typeof jQuery === 'undefined') {
-        document.write(unescape('%3Cscript src="{{ site.baseurl }}/assets/scripts/jquery-3.3.1.min.js"%3E%3C/script%3E'));
-      }
-    </script>
-
     <script src="./js/main.js"></script>
   </body>
 </html>

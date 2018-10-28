@@ -23,6 +23,8 @@
   }
 
   &__options {
+    position: relative;
+    
     @media ($large-up) {
       @include positioner(absolute, auto, auto, top, 0, left, 73%);
     }
