@@ -39,9 +39,5 @@
     &:focus {
       @include tab-focus-silent;
     }
-
-    > .icon {
-      vertical-align: middle;
-    }
   }
 }

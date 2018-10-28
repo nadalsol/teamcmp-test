@@ -10,7 +10,7 @@
 
     @media ($medium-up) {
       display: grid;
-      grid-column-gap: $sp-large;
+      grid-column-gap: $sp-small;
       grid-row-gap: $sp-large;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       padding: $sp-large 0;

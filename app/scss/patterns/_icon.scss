@@ -27,4 +27,5 @@
 
 .icon--small {
   @include size(24px, 24px);
+  vertical-align: middle;
 }
