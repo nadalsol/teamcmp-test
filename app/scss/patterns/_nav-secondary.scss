@@ -35,6 +35,10 @@
 
     .icon {
       margin-right: 2px;
+
+      @media ($medium-up) {
+        margin-right: $sp-base;
+      }
     }
   }
 }
