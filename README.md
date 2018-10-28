@@ -61,6 +61,20 @@ echo $NODE_ENV
 
 **Important:** restart npm server after editing `process.env`.
 
-## Credits
+## Author
 
-* [@nadalsol](https://github.com/nadalsol) - Nadal Soler.
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/nadalsol.png?s=150">
+        <br>
+        <p>
+          Nadal Soler<br>
+          <a href="https://github.com/nadalsol">@nadalsol</a>
+        </p>
+        <p>Front-end Web Developer</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
