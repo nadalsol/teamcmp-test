@@ -1,5 +1,9 @@
 // Secondary navigation
 // -----------------------------------------------------------------------------
+//
+// 1. Target IE10 and IE11, to apply a working alternative to `display: grid`:
+// https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/
+//
 
 .nav-secondary {
   @include list-reset;
@@ -10,6 +14,11 @@
   @media ($medium-up) {
     margin-bottom: 0;
     text-align: left;
+  }
+
+  @media ($medium-up) and (-ms-high-contrast: none), (-ms-high-contrast: active) { // 1
+    float: left;
+    width: 20%;
   }
 
   &__link {
@@ -36,7 +45,7 @@
     .icon {
       margin-right: 2px;
 
-      @media ($medium-up) {
+      @media ($large-up) {
         margin-right: $sp-base;
       }
     }

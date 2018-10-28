@@ -77,15 +77,15 @@ Fully tested with [BrowserStack](https://www.browserstack.com/) on these browser
 * Safari Version 11.1.2 (MacOSX High Sierra).
 * Microsoft Edge 17 (Windows 10).
 * Microsoft Edge 16 (Windows 10).
-* Internet Explorer 11 (Windows 10) // TODO: flexbox and grid not supported
+* Internet Explorer 11 (Windows 10).
 
 ### Mobile browsers
 
-* Safari on iPhone X.
-* Chrome on iPhone 6.
-* Safari on iPad 6th.
-* Chrome on Samsung Galaxy S9.
-* Chrome on Samsung Galaxy S8.
+* Safari on iPhone X (iOS).
+* Chrome on iPhone 6 (iOS).
+* Safari on iPad 6th (iOS).
+* Chrome on Samsung Galaxy S9 (Android).
+* Chrome on Samsung Galaxy S8 (Android).
 
 ## What would I've done differently if I had had more time
 
@@ -94,14 +94,14 @@ I would love to...
 * Use a template engine –like Liquid, Twig or Handlebars– to split different patterns in partial files, getting a more consistent and well organised code.
 * Use Autoprefixer, to ensure more browser support for modern CSS properties.
 * Use BrowserSync.
-* Inlined `svg` files for all icons, rather than `png`, to save HTTP requests and provide better scalable and responsive icons.
+* Use inlined `svg` for all icons, rather than `png`, to save HTTP requests and provide better scalable and responsive icons.
 * Use the `srcset` attribute for the `<img>` element, to let browsers choose the right image for a specific viewport size (at least small images for mobile devices, medium images for tablets, large images for desktop devices).
 * Renamed images with more descriptive names, to improve semantics and "on-site" SEO.
 * Automation for `svg` file optimisation, with [svgomg](https://jakearchibald.github.io/svgomg/), to improve performance and increase page speed.
 * Rearrange social icons order for small devices in the footer, according to design.
 * Replace video cover image for a real `<video>` element.
 * Be more concerned about accessibility.
-* In depth testing for more browsers and devices.
+* Alternative solution to `display: grid`, not supported for IE 10 and IE11 (my actual hack is crappy).
 
 ## Author
 

@@ -1,5 +1,9 @@
 // Footer
 // -----------------------------------------------------------------------------
+//
+// 1. Target IE10 and IE11, to apply a working alternative to `display: grid`:
+// https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/
+//
 
 .footer {
   color: $c-light;
@@ -19,6 +23,10 @@
     @media ($large-up) {
       grid-column-gap: $sp-big;
       padding: $sp-small 0;
+    }
+
+    @media ($medium-up) and (-ms-high-contrast: none), (-ms-high-contrast: active) { // 1
+      @include clearfix;
     }
   }
 
