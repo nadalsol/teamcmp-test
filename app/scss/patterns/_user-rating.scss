@@ -1,27 +1,58 @@
 // User rating
 // -----------------------------------------------------------------------------
 //
-// 1. Prevents content to fall down with long text.
+// 1. Rearrange elements order for small devices.
+// 2. Prevents content to fall down with long text.
 //
 
 .user-rating {
-  @include clearfix;
+  display: table; // 1
+  width: 100%;
+
+  @media ($medium-up) {
+    @include clearfix;
+    display: block;
+  }
 
   &__action {
-    float: left;
-    margin-right: $sp-small;
+    display: table-footer-group; // 1
+
+    @media ($medium-up) {
+      display: block;
+      float: left;
+      margin-right: $sp-small;
+    }
   }
 
   &__buttonset {
-    display: flex;
-    margin-top: $sp-base;
+    @media ($small-only-min) and ($small-only-max) {
+      float: right;
+    }
+
+    @media ($medium-up) {
+      display: flex;
+      margin-top: $sp-base;
+    }
 
     > .button {
-      flex-grow: 1;
+      @media ($medium-up) {
+        flex-grow: 1;
+      }
+    }
+
+    > .button--icon {
+      @media ($small-only-min) and ($small-only-max) {
+        padding: $sp-xsmall;
+      }
     }
   }
 
   &__content {
-    overflow: hidden; // 1
+    display: table-header-group; // 1
+
+    @media ($medium-up) {
+      display: block;
+      overflow: hidden; // 2
+    }
   }
 }
