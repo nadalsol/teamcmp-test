@@ -71,7 +71,7 @@ ul, ol, dl, figure {
   padding-left: $sp-small;
   padding-right: $sp-small;
 
-  @media ($large-up) {
+  @media (min-width: $wrapper-max-wd + 1) {
     padding-left: 0;
     padding-right: 0;
   }
